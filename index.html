@@ -20,6 +20,13 @@
         .copy-btn:hover {
             background-color: #C7E40A;
         }
+        .btn-primary {
+            box-shadow: 0 4px 0 #a8c208;
+        }
+        .btn-primary:active {
+            transform: translateY(4px);
+            box-shadow: 0 0 0 #a8c208;
+        }
     </style>
 </head>
 <body class="flex flex-col">
@@ -34,7 +41,7 @@
                     class="long-url w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-xl focus:outline-none transition-colors mb-4"
                 />
                 
-                <button class="btn-primary w-full text-black font-semibold py-4 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg" style="background: linear-gradient(135deg, #C7E40A 0%, #a8c208 100%);">
+                <button class="btn-primary w-full text-black font-bold py-4 px-6 rounded-xl transition-all" style="background: #C7E40A;">
                     Shorten URL
                 </button>
                 
@@ -50,7 +57,7 @@
         </div>
     </div>
     
-    <footer class="py-6 text-center text-white text-sm">
+    <footer class="py-8 text-center text-black text-sm font-medium mt-8">
         made with ❤️ by kpcodes30
     </footer>
 </body>
