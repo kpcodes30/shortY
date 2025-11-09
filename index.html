@@ -8,8 +8,17 @@
     <script src="app.js" defer></script>
     <style>
         body {
-            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            background: linear-gradient(135deg, #C7E40A 0%, #a8c208 100%);
             min-height: 100vh;
+        }
+        .long-url:focus {
+            border-color: #C7E40A;
+        }
+        .copy-btn {
+            background-color: #e8f77d;
+        }
+        .copy-btn:hover {
+            background-color: #C7E40A;
         }
     </style>
 </head>
@@ -22,17 +31,17 @@
                 <input 
                     type="url" 
                     placeholder="Enter your long URL here..." 
-                    class="long-url w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-xl focus:outline-none focus:border-orange-500 transition-colors mb-4"
+                    class="long-url w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-xl focus:outline-none transition-colors mb-4"
                 />
                 
-                <button class=" btn-primary w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white font-semibold py-4 px-6 rounded-xl hover:from-orange-700 hover:to-amber-700 transition-all transform hover:scale-105 shadow-lg">
+                <button class="btn-primary w-full text-black font-semibold py-4 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg" style="background: linear-gradient(135deg, #C7E40A 0%, #a8c208 100%);">
                     Shorten URL
                 </button>
                 
                 <div class="result mt-6 hidden">
                     <div class="bg-gray-50 rounded-xl p-4 flex items-center justify-between">
                         <span class="short-url text-gray-700 font-mono"></span>
-                        <button class="copy-btn bg-orange-100 text-orange-700 px-4 py-2 rounded-lg hover:bg-orange-200 transition-colors font-medium">
+                        <button class="copy-btn px-4 py-2 rounded-lg transition-colors font-medium text-black">
                             Copy
                         </button>
                     </div>
