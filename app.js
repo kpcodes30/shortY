@@ -8,7 +8,7 @@ btn.addEventListener('click', async() => {
     const longUrl= urlInput.value.trim();
     if(!longUrl) return;
     
-    const response= await fetch('.netlify/functions/shorten' , {
+    const response= await fetch('/.netlify/functions/shorten' , {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: longUrl })

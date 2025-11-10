@@ -1,4 +1,4 @@
-export async function handler(event, context) {
+export async function handler(event) {
     try {
         const { url } = JSON.parse(event.body);
         const response = await fetch('https://api.tinyurl.com/create', {
